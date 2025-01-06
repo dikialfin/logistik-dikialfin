@@ -32,6 +32,9 @@ class Header extends Component
             case 'Barang Keluar':
                 $urlForm = "/form/barang_keluar";
                 break;
+            case 'Stok Barang':
+                $urlForm = "/form/stok_barang";
+                break;
             
             default:
                 $urlForm = '';

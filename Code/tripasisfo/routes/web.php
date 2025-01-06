@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Barang;
 use App\Http\Controllers\Transaksi;
 use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
@@ -17,8 +18,10 @@ Route::get('/stok_barang', [ViewController::class,'stokBarang'])->name('Stok Bar
 Route::prefix('form')->group(function () {
     Route::get('/barang_masuk', [ViewController::class,'formBarangMasuk'])->name('Form Barang Masuk');
     Route::get('/barang_keluar', [ViewController::class,'formBarangKeluar'])->name('Form Barang Keluar');
+    Route::get('/stok_barang', [ViewController::class,'formStokBarang'])->name('Form Stok Barang');
 
     // POST DATA
     Route::post('/barang_masuk', [Transaksi::class,'barangMasuk']);
     Route::post('/barang_keluar', [Transaksi::class,'barangKeluar']);
+    Route::post('/stok_barang', [Barang::class,'inputBarang']);
 });

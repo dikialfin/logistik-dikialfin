@@ -36,4 +36,7 @@ class ViewController extends Controller
     public function formBarangKeluar() {
         return view('formBarangKeluar',['listBarang' => $this->barangController->getAllBarang()]);
     }
+    public function formStokBarang() {
+        return view('formStokBarang');
+    }
 }

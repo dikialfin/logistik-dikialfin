@@ -12,7 +12,7 @@
             </ol>
           </nav>
         </div>
-        @if($title != 'Dashboard' && $title != 'Stok Barang' && $title != "Form Barang Masuk" && $title != "Form Barang Keluar")
+        @if($title != 'Dashboard' && $title != "Form Barang Masuk" && $title != "Form Barang Keluar")
         <div class="col-lg-6 col-5 text-right">
           <a href="{{$urlForm}}" class="btn btn-sm btn-neutral"><i class="ni ni-fat-add"></i>Add Data</a>
         </div>
